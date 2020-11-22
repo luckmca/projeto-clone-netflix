@@ -1,0 +1,136 @@
+:root{
+
+    --vermelho:  #e50914;   /* variáveis declaradas para facilitar caso precisar trocar depois */
+    --preta: #141414;
+}
+
+*{                           /* reset CSS básico */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  /* para os elementos sempre ficarem dentro da box */
+}
+
+
+body{
+
+    background: var(--preta);   /* utilizando a variavel declarada no root com a cor */
+    font-family: 'Bebas Neue', cursive, sans-serif;
+    color: white;
+
+
+}
+
+header .container{
+
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.logo{
+
+    margin-left: 18px;
+    color: var(--vermelho);
+    text-align: left;
+    font-size: 42px;
+    letter-spacing: 2px;  /* adicionei uma separação nas letras para melhorar o visual*/
+    
+}
+
+nav a{
+
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+    font-size: 20px;
+    
+}
+
+nav a:hover{
+    color: white
+}
+
+
+/* Formatação do fundo principal */
+
+.filme-principal{
+
+    font-size: 18px;    
+    height: 450px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(../img/FundoPrincipal/ezgif.com-resize.gif);  /* linear gradiente para fazer um fundo em cima da imagem */
+    background-size: cover;
+    background-repeat: no-repeat ;
+    display: flex;
+    flex-direction: column; /* deixa os elementos na vertical */
+    justify-content: center; /* center para seguir o flex direction */
+    align-items: flex-start; /* pra sempre começar da esquerda, pois o flex direction esta como coluna */
+    padding: 20px;
+}
+
+.descricao{
+
+    margin-bottom: 40px;
+    letter-spacing: 0.7px;
+    font-size: 20px;
+
+}
+
+.titulo{
+    
+    font-size: 70px;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+
+.botao{
+
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    margin-right: 15px;
+    font-family: 'Bebas Neue', cursive, sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    border: rgba(235, 222, 222, 0.418) solid 1px;  
+    transition: 1s;
+
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.botao:hover{
+
+    background-color: #e509147a;
+}
+
+.box-filme{
+
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+
+
+
+
+
+
+.titulo-carrosel1, .titulo-carrosel2, .titulo-carrosel3{
+
+    font-size: 30px;
+    letter-spacing: 3px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+
+}
+
+.titulo-carrosel1{
+
+    margin-top: 15px;
+}
